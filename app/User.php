@@ -23,4 +23,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    //to return notes of the user
+    public function note()
+    {
+        return $this->hasMany('App\Note');
+    }
 }
