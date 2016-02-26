@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    This is application's default page. Go to <a href="{{url('home')}}">Notes</a> to see you notes.
+                    This is application's default page. Go to <a href="{{url('notes')}}">Notes</a> to see you notes.
                 </div>
             </div>
         </div>
