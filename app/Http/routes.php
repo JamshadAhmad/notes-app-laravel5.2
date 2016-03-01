@@ -27,6 +27,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 });
 
+Route::get('/api/v1/notes/{id?}', 'ApiController@index');
+Route::post('/api/v1/login/', 'ApiController@login');
+
+
+//with htaccess like credentials
+/*
 Route::group(['middleware' => 'auth.basic'], function () {
     Route::get('/api/v1/notes/{id?}', 'ApiController@index');
-});
+});*/
